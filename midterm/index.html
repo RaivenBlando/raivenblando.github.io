@@ -10,7 +10,7 @@
     window.onload = function() {
         AFRAME.registerComponent('event-listener', {
             init: function () {
-                this.audio = document.querySelector("#roar");
+                this.audio = document.querySelector("#Kok");
 
                 this.el.addEventListener('click', function (e) {
 		
@@ -64,16 +64,16 @@
     <a-scene renderer="colorManagement: true">
        <a-assets>
         <a-asset-item id="eagle" response-type="arraybuffer" src="./eagle.glb"></a-asset-item>
-        <audio id="roar" src="./assets/roar.mp3"></audio>
+        <audio id="Kok" src="./assets/Kok.mp3"></audio>
       </a-assets>
       <a-entity event-listener id="eagle-model"  
         gltf-model="#eagle" 
         scale ="2 2 2"
-        position = "0 0 -8" 
-        rotation ="0 -70 0" 
+        position = "0 2 -8" 
+        rotation ="0 30 0" 
       >
       </a-entity>
-      <a-sound src="#roar" autoplay="false"></a-sound>
+      <a-sound src="#Kok" autoplay="false"></a-sound>
       <a-entity cursor="rayOrigin:mouse"></a-entity>
       <a-entity cursor="fuse: true; fuseTimeout: 500"></a-entity>
     </a-motion4>
