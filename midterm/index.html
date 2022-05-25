@@ -15,7 +15,7 @@
                 this.el.addEventListener('click', function (e) {
 		
                     let eagle = document.querySelector('#eagle-model')
-		    eagle.setAttribute('animation-mixer', "clip: Scene; loop: once;");
+		    eagle.setAttribute('CINEMA_4D_Principal', "clip: Scene; loop: once;");
                     this.audio.play();
 			
                   console.log(e)
@@ -38,7 +38,7 @@
                 this.el.addEventListener('touchstart', function (e) {
 		
                     let eagle = document.querySelector('#eagle-model')
-		    eagle.setAttribute('animation-mixer', "clip: Scene; loop: once;");
+		    eagle.setAttribute('CINEMA_4D_Principal', "clip: Scene; loop: once;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
@@ -69,7 +69,7 @@
       <a-entity event-listener id="eagle-model"  
         gltf-model="#eagle" 
         scale=".5 .5 .5" 
-        position = "0 0 -5" 
+        position = "0 0 5" 
         rotation="0 0 0" 
       >
       </a-entity>
