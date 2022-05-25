@@ -15,7 +15,7 @@
                 this.el.addEventListener('click', function (e) {
 		
                     let agila = document.querySelector('#agila-model')
-		    agila.setAttribute('animation-mixer', "clip: Scene; loop: once;");
+		    eagle.setAttribute('animation-mixer', "clip: CINEMA_4D_Principal; loop: once;");
                     this.audio.play();
 			
                   console.log(e)
@@ -38,7 +38,7 @@
                 this.el.addEventListener('touchstart', function (e) {
 		
                     let agila = document.querySelector('#agila-model')
-		    agila.setAttribute('animation-mixer', "clip: Scene; loop: once;");
+		    eagle.setAttribute('animation-mixer', "clip: CINEMA_4D_Principal; loop: once;");
                     this.audio.play();
 			console.log(e)
                 }.bind(this));
@@ -68,9 +68,9 @@
       </a-assets>
       <a-entity event-listener id="agila-model"  
         gltf-model="#agila" 
-        scale="1 1 1" 
-        position = "5 3 5" 
-        rotation="1 -60 1" 
+        scale="0 0 0" 
+        position = "0 0 0" 
+        rotation="0 0 0" 
       >
       </a-entity>
       <a-sound src="#roar" autoplay="false"></a-sound>
